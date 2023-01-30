@@ -7,7 +7,7 @@ function Article(article, id) {
   const imageCSSClassName = cssClassName + "-img";
 
   return (
-    <div key={keyUnique} className={cssClassName}>
+    <div key={keyUnique} className="{cssClassName} EachStory">
       <div>
         <img src={article.image} className={imageCSSClassName} alt="article description" />
       </div>

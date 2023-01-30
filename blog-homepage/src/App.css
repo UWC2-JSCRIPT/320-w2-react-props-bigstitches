@@ -2,30 +2,50 @@
   text-align: center;
 }
 
+.EachStory {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: .1em;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.author-image-medium {
+  object-fit: cover;
+  border-radius: 50%;
+  background: conic-gradient( 
+     green 70deg, white 70deg 110deg, 
+     green 110deg 250deg, white 250deg 290deg, green 290deg);
+  padding: .15em;
+  height: 4rem;
+  width: 4rem;
+}
+
+.author-image {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
 .ForYou {
-  background-color: pink;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.MissedIt {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.MissedIt {
-  background-color: orange;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .ForYou-img {
-  height: 5rem;
+  height: 15rem;
 }
 
 .MissedIt-img {

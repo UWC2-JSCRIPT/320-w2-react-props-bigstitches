@@ -6,28 +6,22 @@ import yourArticles from './your-articles.json'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit dog <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <main className="App">
+      <h1>For you</h1>
+      <span className="spanLine"></span>
+      <div className="ForYou">
        <div>
           {yourArticles.map(Article, "ForYou")}
        </div>
+      </div>
+      <h1>In case you missed it</h1>
+      <span className="spanLine"></span>
+      <div className="MissedIt">
         <div>
           {missedArticles.map(Article, "MissedIt")}
         </div>
-      </header>
-    </div>
+      </div>
+    </main>
   );
 }
 

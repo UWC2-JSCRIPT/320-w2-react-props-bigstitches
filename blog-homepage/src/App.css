@@ -1,0 +1,107 @@
+h1 {
+  font-size:1em;
+}
+
+p {
+  font-size:.8em;
+}
+
+.App {
+  text-align: left;
+}
+
+.EachStory {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: .1em;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.author-image-medium {
+  object-fit: cover;
+  border-radius: 50%;
+  background: conic-gradient( 
+     green 70deg, white 70deg 110deg, 
+     green 110deg 250deg, white 250deg 290deg, green 290deg);
+  padding: .15em;
+  height: 4rem;
+  width: 4rem;
+}
+
+.author-image {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.ForYou {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+}
+
+.ForYou-flow {
+  display: flex;
+  flex-direction:row;
+}
+
+.MissedIt {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.MissedIt-flow {
+  display: flex;
+  flex-direction: column;
+}
+
+.ForYou-img {
+  height: 100%;
+  width: 10em;
+  object-fit: cover;
+}
+
+.MissedIt-img {
+  width: 100%;
+  height: 6em;
+  object-fit: cover
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

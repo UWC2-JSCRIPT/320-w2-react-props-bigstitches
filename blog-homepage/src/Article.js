@@ -4,10 +4,11 @@ import Author from './Author';
 function Article(article, id) {
   const cssClassName = this;
   const keyUnique = cssClassName + id;
+  const directionClassName = cssClassName + "-flow EachStory";
   const imageCSSClassName = cssClassName + "-img";
 
   return (
-    <div key={keyUnique} className="{cssClassName} EachStory">
+    <div key={keyUnique} className={directionClassName}>
       <div>
         <img src={article.image} className={imageCSSClassName} alt="article description" />
       </div>
@@ -19,7 +20,6 @@ function Article(article, id) {
           {Author(article)}
         </div>
       </div>
-      
     </div>
   );
 }
